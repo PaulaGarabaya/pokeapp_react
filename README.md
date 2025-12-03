@@ -1,9 +1,9 @@
-## PokeApp – React Functional Application
+# PokeApp – React Functional Application
 
 PokeApp es una aplicación construida con React funcional que permite buscar Pokémons desde la PokeAPI, visualizar detalles, crear nuevos Pokémons mediante un formulario y mantenerlos persistentes mediante LocalStorage.
 El proyecto utiliza hooks clave como useState, useEffect, useContext, useParams, así como conceptos como lifting state up, debounce y enrutado con React Router.
 
-# 🚀 Descripción general
+## 🚀 Descripción general
 
 La aplicación está dividida en varias secciones accesibles mediante React Router:
 
@@ -25,7 +25,7 @@ PokemonDetails: componente que muestra información extendida de un Pokémon, ob
 
 La navegación entre rutas se realiza mediante un Navbar con elementos <Link />.
 
-# 🔍 Sistema de búsqueda
+## 🔍 Sistema de búsqueda
 
 La búsqueda se gestiona desde el componente SearchContainer, que mantiene:
 
@@ -45,7 +45,7 @@ peticiones con el input vacío,
 
 peticiones duplicadas de Pokémon ya existentes en el listado.
 
-# 🧩 Gestión global – React Context
+## 🧩 Gestión global – React Context
 
 La aplicación implementa un Contexto global para almacenar los pokémons creados por el usuario.
 Este contexto vive en el componente raíz (App) y se comparte con cualquier parte de la aplicación que necesite:
@@ -55,7 +55,7 @@ PokemonForm (consumidor): puede agregar nuevos pokémons al contexto.
 Search (consumidor): puede leer la lista para incluir pokémons creados en los resultados de búsqueda y evitar duplicados.
 
 
-# 📝 Formulario de creación de Pokémons
+## 📝 Formulario de creación de Pokémons
 
 El formulario ubicado en /new utiliza react-hook-form y contiene los siguientes campos:
 
@@ -74,6 +74,6 @@ El Pokémon se almacena en LocalStorage.
 
 Puede aparecer también en los resultados de búsqueda.
 
-# 💾 Persistencia con LocalStorage
+## 💾 Persistencia con LocalStorage
 
 Cada Pokémon creado no solo se guarda en el Context, sino también en LocalStorage, garantizando que la información persista al recargar o cerrar el navegador.
